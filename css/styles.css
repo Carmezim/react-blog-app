@@ -1,0 +1,16 @@
+body {
+  background-image: url(//haywardfamily.org/hp28s.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  height: 670px;
+  width: 860px;
+}
+div #main {
+  height: 670px;
+  width: 860px;
+}
+p#display {
+  color: #4f5c65;
+  font-family: VT323, courier, sans;
+  font-size
+}
