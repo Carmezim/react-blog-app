@@ -2,7 +2,7 @@
   "name": "React App",
   "version": "1.0.0",
   "description": "React: Building Modern Web Apps",
-  "main": "index.js",
+  "main": "",
   "scripts": {
     "test": "echo \"Error\" && exit 1",
     "start": "webpack-dev-server --progress --inline --hot",
@@ -10,15 +10,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Carmezim/mastering-react.git"
+    "url": "https://github.com/Carmezim/react-blog-app"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Carmezim/mastering-react/issues"
+    "url": "https://github.com/Carmezim/react-blog-app/issues"
   },
-  "homepage": "https://github.com/Carmezim/mastering-react#readme",
+  "homepage": "https://github.com/Carmezim/react-blog-app#readme",
   "dependencies": {
+    "normalize.css": "^4.2.0",
     "react": "^15.3.0",
     "react-dom": "^15.3.0"
   },
