@@ -1,5 +1,4 @@
 @import "vendor/normalize.less";
-@import "components/basicInput.less";
 @import "mixins.less";
 @import "colors.less";
 
@@ -10,9 +9,11 @@ html, body {
     font-family: 'Open Sans' sans-serif;
   }
 }
+
 a {
   cursor: pointer;
 }
+
 // layout
 .app-container {
   height: 100%;
@@ -22,7 +23,7 @@ a {
     top: 0;
     height: 40px;
     width: 100%;
-    win-width: 800px;
+    min-width: 800px;
     z-index: 100;
   }
   main {
@@ -31,7 +32,7 @@ a {
     height: ~'calc(100% - 40px)';
     position: absolute;
     top: 40px;
-    // padding: 40px 0 0 0;
+    //padding: 40px 0 0 0;
 
     &>* {
       overflow-y: auto;
@@ -53,14 +54,15 @@ fieldset {
   }
 
   .basic-input {
-    width: 100%px;
+    width: 100%;
   }
 
-  button(type=submit) {
+  button[type=submit] {
     float: right;
     margin: 20px 0 0 0;
   }
 }
+
 hr {
   width: 50px;
   content: '';
@@ -75,7 +77,7 @@ hr {
     color: #aaa;
     content: '§';
     font-size: 18px;
-    transform: scaleX(6) rotateZ(-90deg);
+    transform: scaleX(6) rotateZ(-90deg) ;
     height: 10px;
     font-weight: 100;
     line-height: 10px;
@@ -86,6 +88,7 @@ hr {
     top: 5px;
   }
 }
+
 button {
   background-color: #bbb;
   color: black;
@@ -106,7 +109,9 @@ button {
       background: #000099;
     }
   }
-  box-shadow: 1xp 3px 2px 0px #666;
+
+  box-shadow: 1px 3px 2px 0px #666;
+
   transition: transform 100ms ease, box-shadow 100ms ease;
 
   &:active {
@@ -115,18 +120,21 @@ button {
   }
 }
 
-@import "vendor/quill.snow.less";
-@import "views/appHeader.less";
+@import "components/basicInput.less";
+@import "components/loader.less";
 
 @import "components/users/view.less";
+@import "components/posts/list.less";
 
-@import "views/login.less"
+@import "views/login.less";
 @import "views/appHeader.less";
 
 @import "views/users/edit.less";
 @import "views/users/list.less";
 @import "views/users/view.less";
 
+@import "views/posts/edit.less";
+@import "views/posts/list.less";
+@import "views/posts/view.less";
+
 @import "vendor/quill.snow.less";
-
-
