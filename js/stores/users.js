@@ -10,11 +10,11 @@ export default Reflux.createStore({
   listenables: Actions,
   /** Alternative Syntax
    init: function () {
-		// listen to manu
-		this.listenToMany([Actions.getPosts]);
-		// listen to one
-		this.listenTo(Actions.getPosts, this.onGetPosts);
-	},
+    // listen to manu
+    this.listenToMany([Actions.getPosts]);
+    // listen to one
+    this.listenTo(Actions.getPosts, this.onGetPosts);
+  },
    */
   users: [],
   endpoint: Config.apiRoot + '/users',
