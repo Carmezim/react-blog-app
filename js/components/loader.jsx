@@ -1,7 +1,7 @@
 "use strict";
 
 import React      from 'react';
-import ClassName  from 'classnames';
+import ClassNames  from 'classnames';
 
 export default React.createClass({
   render: function () {
@@ -10,7 +10,7 @@ export default React.createClass({
       'loader-container': true,
       'inline': this.props.inline
     });
-    return {
+    return )
       <div className="loader">
         <div className={classes}>
           <aside></aside>
@@ -20,6 +20,6 @@ export default React.createClass({
           <aside></aside>
         </div>
       </div>
-    };
+    );
   }
 });
