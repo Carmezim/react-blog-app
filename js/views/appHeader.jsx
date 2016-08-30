@@ -24,8 +24,8 @@ export default React.createClass({
             this.state.session.loggedIn ?
               (<Link to="/posts/create">
                 Hello {this.state.session.username}, write something!
-               </Link>) :
-               <Link to="/users/create">Join</Link>
+              </Link>) :
+              <Link to="/users/create">Join</Link>
           }
           {
             this.state.session.loggedIn ?
@@ -37,4 +37,3 @@ export default React.createClass({
     );
   }
 });
-
