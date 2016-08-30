@@ -6,6 +6,8 @@ export default React.createClass({
     return (
       <div className="user-view">
         <UserView userId={this.props.params.userId} />
+        <hr />
+        <PostList user={this.props.params.userId} />
       </div>
     );
   }
