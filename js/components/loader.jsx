@@ -10,7 +10,7 @@ export default React.createClass({
       'loader-container': true,
       'inline': this.props.inline
     });
-    return )
+    return (
       <div className="loader">
         <div className={classes}>
           <aside></aside>
